@@ -1,0 +1,113 @@
+{% extends 'app/base.html'%}
+
+{% load static%}   
+{%  block contenido %}
+<div id="carouselExampleFade1" class="carousel slide carousel-fade container mt-4" role="region" aria-label="Imagen del Producto">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/imagenes/carousel1.jpg'%} " class="d-block w-100" alt="Primera imagen del carrusel">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/imagenes/carousel1.jpg'%} " class="d-block w-100" alt="Segunda imagen del carrusel">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/imagenes/carousel1.jpg'%} " class="d-block w-100" alt="Tercera imagen del carrusel">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" aria-label="Anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" aria-label="Siguiente">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+
+
+
+<div class="card-group container mt-4 mb-4">
+    <div class="card me-2">
+        <img src="{% static 'app/imagenes/maceteros2.jpg'%}" class="card-img-top img-fluid" alt="Macetero">
+        <div class="card-body">
+            <h5 class="card-title">Macetero</h5>
+            <p class="card-text">Proporciona un espacio para el crecimiento de las raíces de la planta y contiene el sustrato necesario para su desarrollo.</p>
+        </div>
+    </div>
+    <div class="card me-2">
+        <img src="{% static 'app/imagenes/azolla.jpg'%}" class="card-img-top img-fluid" alt="Planta">
+        <div class="card-body">
+            <h5 class="card-title">Planta</h5>
+            <p class="card-text">Organismo vivo perteneciente al reino Plantae, que incluye una amplia gama de organismos multicelulares que producen su propio alimento a través de la fotosíntesis.</p>
+        </div>
+    </div>
+    <div class="card me-2">
+        <img src="{% static 'app/imagenes/tijera.jpg'%}" class="card-img-top img-fluid" alt="Herramienta Tijera">
+        <div class="card-body">
+            <h5 class="card-title">Herramienta Tijera</h5>
+            <p class="card-text">Podar para jardinería resistentes se pueden utilizar en bonsais, plantas florecientes, arbustos y hierbas.</p>
+        </div>
+    </div>
+    <div class="me-2 d-none d-lg-block card">
+        <img src="{% static 'app/imagenes/tierra_de_hoja.jpg'%}" class="card-img-top img-fluid" alt="Tierra de hoja">
+        <div class="card-body">
+            <h5 class="card-title">Tierra de hoja</h5>
+            <p class="card-text">Sustrato natural desarrollado a partir de la compostación de hojas y residuos vegetales, que mejora las condiciones de los suelos, tanto para el desarrollo de prados como el de otras plantas.</p>
+        </div>
+    </div>
+    <div class="me-2 d-none d-xl-block card">
+        <img src="{% static 'app/imagenes/arbolillo.jpg'%}" class="card-img-top img-fluid" alt="Arbustos">
+        <div class="card-body">
+            <h5 class="card-title">Arbustos</h5>
+            <p class="card-text">Planta leñosa, con distinción de tronco único y copa y con una talla comprendida entre 5 y 7 m.</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <h1 class="titulo">BIENVENIDOS A GARDENING</h1>
+    <div class="info-empresa">
+        <div class="empresa">
+          <div class="empresa-1">
+            <h2>NUESTRA EMPRESA</h2>
+            <p>Ves tu destino para productos de jardinería de calidad y servicios expertos. Desde plantas exóticas hasta herramientas especializadas, te ofrecemos todo lo necesario para crear y mantener tu jardín perfecto. Con asesoramiento personalizado y un compromiso con la sostenibilidad, en Gardening hacemos que la naturaleza florezca en tu hogar.</p>
+            <a href="contacto.html" class="btn_conocer">Conocer más</a>
+        </div>
+            <div class="empresa-2">
+                <h2>RESPONSABILIDAD</h2>
+                <p>Ser responsable es asumir las consecuencias de nuestras acciones y decisiones, es cumplimiento del deber.</p>
+                <h2>COMPROMISO</h2>
+                <p>El compromiso es más que cumplir una tarea, es poner en juego nuestras capacidades y buena disposición.</p>
+                <h2>RESPETO</h2>
+                <p>El respeto debe ser siempre en todo nivel de la organización, hacia las personas que interactúan en nuestro trabajo y comunidad.</p>
+            </div>
+            <div class="empresa-3">
+                <h2>GALERIA</h2>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'app/imagenes/galeria1.jpg'%}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'app/imagenes/galeria2.jpg' %}" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'app/imagenes/galeria3.jpg' %}" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock%}

@@ -1,0 +1,150 @@
+.nav-link.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    color: white; 
+}
+
+.nav-link.dropdown-toggle img {
+    margin-right: 8px; 
+}
+
+.nav-link.dropdown-toggle:hover, .nav-link.dropdown-toggle:focus {
+    color: white; 
+    text-decoration: none; 
+}
+
+.btn-carrito {
+    color: white; 
+    background-color: transparent; 
+    border: none; 
+}
+
+.btn-carrito:hover, .btn-carrito:focus {
+    color: white; 
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #2e7d32;
+}
+
+.info-empresa {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.empresa {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.empresa > div {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.empresa > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.empresa-2 h2,
+.empresa-2 p,
+.empresa-3 h2,
+.empresa-1 h2 {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #4caf50;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn_conocer {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_conocer:hover {
+    background-color: #388e3c;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #2f2f2f;
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #1abc9c; 
+}
+
+.social-icon i {
+    transition: color 0.3s ease-in-out;
+}
+
+.copyright {
+    font-size: 14px;
+}
+.info-menu-derecha img {
+    width: 30px; 
+    height: auto; 
+    margin-right: 10px; 
+}

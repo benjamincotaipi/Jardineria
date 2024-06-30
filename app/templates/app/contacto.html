@@ -1,0 +1,73 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+<div class="card mb-3">
+    <img src="{% static 'app/imagenes/imagencontacto.avif' %}" class="card-img-bottom" alt="...">
+    <div class="texto-sobre-imagen">
+        Contacto
+    </div>
+</div>
+
+<div class="gris-lider">
+    <div class="texto-cotizacion">
+        <p>
+            "Si deseas realizar una cotización o tienes alguna duda,
+             puedes escribirnos a través del formulario de contacto o por los siguientes 
+             canales"
+        </p>
+    </div>
+    <h3>CLIC PARA CONTACTO DIRECTO</h3>
+    <div class="contact-info">
+        <div class="cuadrado-Telefono">
+            <div class="Telefono">
+                <div>
+                    <img src="{% static 'app/imagenes/telefono.png' %}" alt="" style="height: 50px">
+                    <h3>Telefono</h3>
+                    <h4>+5698765432</h4>
+                </div>
+            </div>
+        </div>
+        <div class="cuadrado-Correo">
+            <div class="Correo">
+                <div>
+                    <img src="{% static 'app/imagenes/correo.png' %}" alt="" style="height: 50px">
+                    <h3>Correo</h3>
+                    <h4>ventas@Gardening.cl</h4>
+                </div>
+            </div>
+        </div>
+        <div class="cuadrado-Whatsapp">
+            <div class="Whatsapp">
+                <div>
+                    <img src="{% static 'app/imagenes/whatsapp.jpg' %}" alt="" style="height: 50px;">
+                    <h3>Whatsapp</h3>
+                    <h4>+5698765432</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <h3>CONTACTANOS</h3>
+    </div>
+    <div class="body">
+        <div class="div-mayor">
+            <div class="nombre">
+                <input type="text" class="form-control" id="nombre" required="" placeholder="Escribe tu nombre">
+            </div>
+            <div class="email">
+                <input type="email" class="form-control" id="email" required="" placeholder="Escribe tu email">
+            </div>
+            <div class="whatsapp">
+                <input type="tel" class="form-control" id="numero" required="" placeholder="+569">
+            </div>
+            <div class="comentario">
+                <textarea class="form-control" id="comentarios" rows="6" required="" placeholder="Escribe tus comentarios"></textarea>
+            </div>
+            <button type="submit" class="btn-secundario" onclick="validarFormulario()">Enviar</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
